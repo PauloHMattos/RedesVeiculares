@@ -31,10 +31,10 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Start Bootstrap</span>
       <span class="fa-stack fa-3x">
-          <i class="fa fa-circle-o-notch fa-inverse fa-stack-2x"></i>
-          <!--i class="fa fa-car fa-stack-1x"></i-->
-          <i class="fa fa-wifi fa-stack-1x"></i>
-        </span>
+        <i class="fa fa-circle-o-notch fa-inverse fa-stack-2x"></i>
+        <!--i class="fa fa-car fa-stack-1x"></i-->
+        <i class="fa fa-wifi fa-stack-1x"></i>
+      </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -77,14 +77,20 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="introduction">
       <div class="my-auto">
-        <h1 class="mb-0">Redes<br/>
+        <p class="mb-5">
+          Universidade Federal do Rio de Janeiro
+          <br/> Redes 1 - Luís Henrique M. K. Costa
+        </p>
+        <h1 class="mb-0">Redes
+          <br/>
           <span class="text-primary">Veiculares</span>
         </h1>
         <div class="subheading mb-5">Ary Neto, Igor Rocha, Paulo Mattos
         </div>
-        <p class="mb-5">
-          Universidade Federal do Rio de Janeiro<br/>
-          Redes 1 - Luís Henrique M. K. Costa
+        <p class="tabed">
+          Redes veiculares (VANETs) são uma classe especial de Redes móveis Ad Hoc (MANETs) formadas por veículos que possuem equipamentos
+          com tecnologia wireless. A comunicação nas VANETs é feita entre dois automóveis e/ou entre veículos e unidades
+          lateral à pista (placas, sinais...) formando um sistema de transporte inteligente.
         </p>
       </div>
     </section>
@@ -93,33 +99,31 @@
       <div class="my-auto">
         <h2 class="mb-5">Descrição e aplicações</h2>
         <p class="tabed">
-            Dentre as aplicações se destacam as de entretenimento onde a principal intenção é trazer conteúdos da internet como músicas,
-            filmes e vídeos; conveniência com o objetivo de trazer informação de melhores postos de combustíveis,
-            melhores rotas, cobrança automática de pedágios e outras facilidades ao motorista; e segurança onde a
-            divulgação de informações sobre acidentes e outras ocorrências são alvos dessa classe. Abaixo alguns
-            exemplos de pesquisas e aplicações interessantes.
+          Dentre as aplicações se destacam as de entretenimento onde a principal intenção é trazer conteúdos da internet como músicas,
+          filmes e vídeos; conveniência com o objetivo de trazer informação de melhores postos de combustíveis, melhores
+          rotas, cobrança automática de pedágios e outras facilidades ao motorista; e segurança onde a divulgação de informações
+          sobre acidentes e outras ocorrências são alvos dessa classe. Abaixo alguns exemplos de pesquisas e aplicações interessantes.
         </p>
         <p class="tabed">
-            A Distribuição de Conteúdo em Redes Veiculares ainda é um problema
+          A Distribuição de Conteúdo em Redes Veiculares ainda é um problema
         </p>
-        <p  class="tabed">
-            Achar a melhor rota é baseado na descoberta do caminho mínimo dependendo do estado das arestas e os seus pesos. O caminho
-            é ótimo se e somente se a soma dos seus custos de transição for mínima partindo da origem até o destino,
-            realizando todas as possíveis combinações. Uma saída para planejar a melhor uma rota é utilizando uma
-            versão modificada do algoritmo de busca Anytime Repairing A* (ARA*) proposto por Likhachev.
+        <p class="tabed">
+          Achar a melhor rota é baseado na descoberta do caminho mínimo dependendo do estado das arestas e os seus pesos. O caminho
+          é ótimo se e somente se a soma dos seus custos de transição for mínima partindo da origem até o destino, realizando
+          todas as possíveis combinações. Uma saída para planejar a melhor uma rota é utilizando uma versão modificada do
+          algoritmo de busca Anytime Repairing A* (ARA*) proposto por Likhachev.
         </p>
-        <p  class="tabed">
-            Falhas humanas nas ultrapassagens geram riscos enormes de acidentes diariamente nas estradas um algoritmo que faça suporte
-            a ultrapassagens pode reduzir o número de falhas além de economizar combustível. Para esse cenário é
-            fundamental obter a informação da trajetória do veículo.
+        <p class="tabed">
+          Falhas humanas nas ultrapassagens geram riscos enormes de acidentes diariamente nas estradas um algoritmo que faça suporte
+          a ultrapassagens pode reduzir o número de falhas além de economizar combustível. Para esse cenário é fundamental
+          obter a informação da trajetória do veículo.
         </p>
-        <p  class="tabed">
-            Um contraste intrigante pode ser observado no cálculo de uma distância segura de frenagem para prevenção de colisão dianteira
-            onde é utilizado comunicações dedicadas de curto alcance (unidades de bordo) e um sistema autônomo de
-            frenagem segura de trens. No primeiro caso as pesquisas são voltadas a algoritmos e testes para aproveitamento
-            e análise da localização fornecida por um GPS, presente na unidade de bordo. E no segundo cenário onde
-            os trens não aproveitam das informações limitadas disponibilizadas por um GPS e outra estratégia precisa
-            ser usada.
+        <p class="tabed">
+          Um contraste intrigante pode ser observado no cálculo de uma distância segura de frenagem para prevenção de colisão dianteira
+          onde é utilizado comunicações dedicadas de curto alcance (unidades de bordo) e um sistema autônomo de frenagem
+          segura de trens. No primeiro caso as pesquisas são voltadas a algoritmos e testes para aproveitamento e análise
+          da localização fornecida por um GPS, presente na unidade de bordo. E no segundo cenário onde os trens não aproveitam
+          das informações limitadas disponibilizadas por um GPS e outra estratégia precisa ser usada.
         </p>
 
       </div>
@@ -130,40 +134,38 @@
       <div class="my-auto">
         <h2 class="mb-5">Explicação da tecnologia</h2>
         <p class="tabed">
-            Redes veiculares podem usar qualquer tecnologia de rede sem fio como base. As mais comuns são as tecnologias de rádio de
-            curto alcance, como a WLAN (padrão IEEE 802.11 ou ZigBee). Além disso, as tecnologias de celular ou LTE
-            podem ser usadas para as VANETs. Existem três arquiteturas principais de redes veiculares: ad hoc pura,
-            infraestruturada e híbrida.
+          Redes veiculares podem usar qualquer tecnologia de rede sem fio como base. As mais comuns são as tecnologias de rádio de
+          curto alcance, como a WLAN (padrão IEEE 802.11 ou ZigBee). Além disso, as tecnologias de celular ou LTE podem ser
+          usadas para as VANETs. Existem três arquiteturas principais de redes veiculares: ad hoc pura, infraestruturada
+          e híbrida.
         </p>
         <p class="tabed">
-            Grande parte das WLANs são redes com infra-estrutura. A transferência de dados acontece sempre entre uma estação e um ponto
-            de acesso (Access Point). Esse ponto de acesso são nós especiais que permitem captar e retransmitir as
-            mensagens enviadas pelas estações. Nunca uma estação se comunica diretamente com outra estação. Ele também
-            pode funcionar como uma ponte para outra rede. Um problema é quando a infra-estrutura da rede é destruida
-            como por exemplo por um terremoto deixando a rede inutilizada. Redes de telefonia móvel são um caso típico
-            de redes com infra-estrutura.
+          Grande parte das WLANs são redes com infra-estrutura. A transferência de dados acontece sempre entre uma estação e um ponto
+          de acesso (Access Point). Esse ponto de acesso são nós especiais que permitem captar e retransmitir as mensagens
+          enviadas pelas estações. Nunca uma estação se comunica diretamente com outra estação. Ele também pode funcionar
+          como uma ponte para outra rede. Um problema é quando a infra-estrutura da rede é destruida como por exemplo por
+          um terremoto deixando a rede inutilizada. Redes de telefonia móvel são um caso típico de redes com infra-estrutura.
         </p>
         <p class="tabed">
-            As redes Ad Hoc não necessitam de nenhuma infra-estrutura para funcionar. É possível cada estação se comunicar sem intermediário
-            com outra. Nenhum ponto de acesso é necessário para controlar o acesso ao meio. Criando então uma barreira
-            geográfica onde uma estação X só pode se comunicar com uma estação Y se Y estiver dentro do raio de ação
-            (onde o sinal desta estação chegue com um mínimo de clareza) de X ou se existir uma ou mais estações
-            entre X e Y que possam encaminhar a mensagem. Numa rede Ad Hoc, a complexidade de cada estação é alta
-            porque toda estação tem que implementar mecanismos de acesso ao meio, mecanismos para controlar problemas
-            com “estações escondidas” e mecanismos para prover uma certa qualidade de serviço.
+          As redes Ad Hoc não necessitam de nenhuma infra-estrutura para funcionar. É possível cada estação se comunicar sem intermediário
+          com outra. Nenhum ponto de acesso é necessário para controlar o acesso ao meio. Criando então uma barreira geográfica
+          onde uma estação X só pode se comunicar com uma estação Y se Y estiver dentro do raio de ação (onde o sinal desta
+          estação chegue com um mínimo de clareza) de X ou se existir uma ou mais estações entre X e Y que possam encaminhar
+          a mensagem. Numa rede Ad Hoc, a complexidade de cada estação é alta porque toda estação tem que implementar mecanismos
+          de acesso ao meio, mecanismos para controlar problemas com “estações escondidas” e mecanismos para prover uma certa
+          qualidade de serviço.
         </p>
 
         <img src="img/img1.jpg" />
 
         <p class="tabed">
-            Muitas VANETs usam o IEEE 802.11 que é uma típica rede com infra-estrutura, mas que pode suportar uma rede Ad Hoc.
+          Muitas VANETs usam o IEEE 802.11 que é uma típica rede com infra-estrutura, mas que pode suportar uma rede Ad Hoc.
         </p>
         <p class="tabed">
-            A tecnologia mais recente para essa rede sem fio é a comunicação por luz visível [VLC] (transmissão e recepção por infravermelho).
-            Imagine uma luz de flash é ligada e desligada extremamente rapidamente através de um computador, podemos
-            considerar que existe comunicação. A rápida adoção de lâmpadas LED criou uma enorme oportunidade para
-            o VLC junto com o problema do congestionamento do espectro de rádio utilizado pelos sistemas de rádio
-            Wi-Fi e celular.
+          A tecnologia mais recente para essa rede sem fio é a comunicação por luz visível [VLC] (transmissão e recepção por infravermelho).
+          Imagine uma luz de flash é ligada e desligada extremamente rapidamente através de um computador, podemos considerar
+          que existe comunicação. A rápida adoção de lâmpadas LED criou uma enorme oportunidade para o VLC junto com o problema
+          do congestionamento do espectro de rádio utilizado pelos sistemas de rádio Wi-Fi e celular.
         </p>
 
       </div>
@@ -174,10 +176,10 @@
         <h2 class="mb-5">Simuladores de VANETs</h2>
 
         <p class="tabed">
-            Antes da implementação de VANETs nas estradas, são necessárias simulações realistas de VANETs usando uma combinação de simulação
-            de Mobilidade Urbana e simulação de Rede. Normalmente, o simulador de código aberto como o SUMO (que
-            lida com a simulação de tráfego rodoviário) é combinado com um simulador de rede como o NetSim (TETCOS),
-            para estudar o desempenho das VANETs.
+          Antes da implementação de VANETs nas estradas, são necessárias simulações realistas de VANETs usando uma combinação de simulação
+          de Mobilidade Urbana e simulação de Rede. Normalmente, o simulador de código aberto como o SUMO (que lida com a
+          simulação de tráfego rodoviário) é combinado com um simulador de rede como o NetSim (TETCOS), para estudar o desempenho
+          das VANETs.
         </p>
     </section>
 
@@ -192,7 +194,7 @@
       <div class="my-auto">
         <h2 class="mb-5">VANETs inteligentes</h2>
         <p class="tabed">
-            As redes veiculares inteligentes (InVANETs) utilizam os protocolos de rede sem fio IEE 802.11p e IEE 802.16 para a comunicação.
+          As redes veiculares inteligentes (InVANETs) utilizam os protocolos de rede sem fio IEE 802.11p e IEE 802.16 para a comunicação.
         </p>
       </div>
     </section>
@@ -200,14 +202,14 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="brazil">
       <div class="my-auto">
         <h2 class="mb-5">Situação da tecnologia no Brasil</h2>
-        
+
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="conclusion">
       <div class="my-auto">
         <h2 class="mb-5">Conclusão</h2>
-        
+
       </div>
     </section>
 
@@ -215,107 +217,106 @@
       <div class="my-auto">
         <h2 class="mb-5">Referências Bibliográficas</h2>
         <ol class="">
-            <li>
-                Title: "A Study on Vehicular Ad Hoc Networks"
-                <br/> Authors: Viswacheda Duduku. V, Ali Chekima, Farrah Wong, Jamal Ahmad Dargham
-                <br/> Published by the IEEE.
-            </li>
-            <li>
-                Title: "Vehicular Ad-hoc Networks (VANETs) dynamic performance estimation routing model for city scenarios"
-                <br/> Authors: Mayada Abdelgadir, Rashid Saeed, Abuagla Babiker
-                <br/> Published by the IEEE.
-                <br/>
-            </li>
-            <li>
-                Title: "Vehicular Ad Hoc Networks (VANET): Architectures, methodologies and design issues"
-                <br/> Authors: B. Ayyappan, P. Mohan Kumar
-                <br/> Published by the IEEE.
-                <br/>
-            </li>
-            <li>
-                Title: "Routing in Vehicular Ad-hoc Networks: A Survey on Single- and Cross-Layer Design Techniques, and Perspectives"
-                <br/> Authors: Azlan Awang, Khaleel Husain, Nidal Kamel, Sonia Aïssa
-                <br/> Published by the IEEE.
-                <br/>
-            </li>
-            <li>
-                Title: "The Security of Vehicular Adhoc Networks"
-                <br/> Authors: Farzad Sabahi
-                <br/> Published by the IEEE.
-                <br/>
-            </li>
+          <li>
+            Title: "A Study on Vehicular Ad Hoc Networks"
+            <br/> Authors: Viswacheda Duduku. V, Ali Chekima, Farrah Wong, Jamal Ahmad Dargham
+            <br/> Published by the IEEE.
+          </li>
+          <li>
+            Title: "Vehicular Ad-hoc Networks (VANETs) dynamic performance estimation routing model for city scenarios"
+            <br/> Authors: Mayada Abdelgadir, Rashid Saeed, Abuagla Babiker
+            <br/> Published by the IEEE.
+            <br/>
+          </li>
+          <li>
+            Title: "Vehicular Ad Hoc Networks (VANET): Architectures, methodologies and design issues"
+            <br/> Authors: B. Ayyappan, P. Mohan Kumar
+            <br/> Published by the IEEE.
+            <br/>
+          </li>
+          <li>
+            Title: "Routing in Vehicular Ad-hoc Networks: A Survey on Single- and Cross-Layer Design Techniques, and Perspectives"
+            <br/> Authors: Azlan Awang, Khaleel Husain, Nidal Kamel, Sonia Aïssa
+            <br/> Published by the IEEE.
+            <br/>
+          </li>
+          <li>
+            Title: "The Security of Vehicular Adhoc Networks"
+            <br/> Authors: Farzad Sabahi
+            <br/> Published by the IEEE.
+            <br/>
+          </li>
 
-            <li>
-                Conceito de Redes com Infra-estrutura e Ad Hoc. Grupo de Teleinformática e Automação – Universidade Federal do Rio de
-                Janeiro (UFRJ) Rio de Janeiro – RJ – Brasil. Acessado em 05 de maio de 2018 por ;
-                <a href="https://www.gta.ufrj.br/grad/00_2/ieee/redes.htm">https://www.gta.ufrj.br/grad/00_2/ieee/redes.htm</a>;
-            </li>
+          <li>
+            Conceito de Redes com Infra-estrutura e Ad Hoc. Grupo de Teleinformática e Automação – Universidade Federal do Rio de Janeiro
+            (UFRJ) Rio de Janeiro – RJ – Brasil. Acessado em 05 de maio de 2018 por ;
+            <a href="https://www.gta.ufrj.br/grad/00_2/ieee/redes.htm">https://www.gta.ufrj.br/grad/00_2/ieee/redes.htm</a>;
+          </li>
 
-            <li>
-                Dr Gordon Povey. What is Visible Light Communication?. University of Edinburgh’s Institute for Digital Communications. Acessado
-                em 06 de maio de 2018 por ;
-                <a href="http://visiblelightcomm.com/what-is-visible-light-communication-vlc/">http://visiblelightcomm.com/what-is-visible-light-communication-vlc/</a>;
-            </li>
+          <li>
+            Dr Gordon Povey. What is Visible Light Communication?. University of Edinburgh’s Institute for Digital Communications. Acessado
+            em 06 de maio de 2018 por ;
+            <a href="http://visiblelightcomm.com/what-is-visible-light-communication-vlc/">http://visiblelightcomm.com/what-is-visible-light-communication-vlc/</a>;
+          </li>
 
-            <li>
-                Igor V. Campbell, Rafael S. Alves, Miguel Elias M. Campista, Luís Henrique M. K. Costa, Otto Carlos M. B. Duarte, Marcelo
-                G. Rubinstein. Um algoritmo para o suporte a ultrapassagem de veículos usando redes ad-hoc veiculares.
-                Grupo de Teleinformática e Automação - PEE/COPPE - DEL/POLI - Universidade Federal do Rio de Janeiro
-                (UFRJ). PEL/DETEL/FEN - Universidade do Estado do Rio de Janeiro (UERJ). Acessado em 06 de maio de 2018
-                por
-                <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/CAC09.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/CAC09.pdf</a>;
-            </li>
+          <li>
+            Igor V. Campbell, Rafael S. Alves, Miguel Elias M. Campista, Luís Henrique M. K. Costa, Otto Carlos M. B. Duarte, Marcelo
+            G. Rubinstein. Um algoritmo para o suporte a ultrapassagem de veículos usando redes ad-hoc veiculares. Grupo
+            de Teleinformática e Automação - PEE/COPPE - DEL/POLI - Universidade Federal do Rio de Janeiro (UFRJ). PEL/DETEL/FEN
+            - Universidade do Estado do Rio de Janeiro (UERJ). Acessado em 06 de maio de 2018 por
+            <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/CAC09.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/CAC09.pdf</a>;
+          </li>
 
-            <li>
-                Vitor Borges C. da Silva, Miguel Elias M. Campista e Luís Henrique M. K. Costa. Uma Estratégia de Cache Proativo para Distribuição
-                de Conteúdo em Redes Veiculares. GTA/PEE-COPPE/DEL-Poli – Universidade Federal do Rio de Janeiro (UFRJ).
-                Acessado em 06 de maio de 2018 por
-                <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/SCC15.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/SCC15.pdf</a>;
-            </li>
+          <li>
+            Vitor Borges C. da Silva, Miguel Elias M. Campista e Luís Henrique M. K. Costa. Uma Estratégia de Cache Proativo para Distribuição
+            de Conteúdo em Redes Veiculares. GTA/PEE-COPPE/DEL-Poli – Universidade Federal do Rio de Janeiro (UFRJ). Acessado
+            em 06 de maio de 2018 por
+            <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/SCC15.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/SCC15.pdf</a>;
+          </li>
 
-            <li>
-                Marcus de L. Braga, Alyson de J. dos Santos, Aloysio C. P. Pedroza and Luís H. M. K. Costa. Planejamento de Rotas com Algoritmos
-                Anytime em Redes Veiculares na Plataforma Raspberry Pi. GTA/PEE-COPPE/DEL-Poli – Universidade Federal
-                do Rio de Janeiro (UFRJ). Acessado em 06 de maio de 2018 por
-                <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/BSP14.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/BSP14.pdf</a>;
-            </li>
+          <li>
+            Marcus de L. Braga, Alyson de J. dos Santos, Aloysio C. P. Pedroza and Luís H. M. K. Costa. Planejamento de Rotas com Algoritmos
+            Anytime em Redes Veiculares na Plataforma Raspberry Pi. GTA/PEE-COPPE/DEL-Poli – Universidade Federal do Rio
+            de Janeiro (UFRJ). Acessado em 06 de maio de 2018 por
+            <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/BSP14.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/BSP14.pdf</a>;
+          </li>
 
-            <li>
-                Eduardo de Mello Castanho. Um sistema cooperativo de precisão de posicionamento GNSS para redes veiculares. Universidade
-                Federal do Rio de Janeiro (UFRJ). Acessado em 06 de maio de 2018 por
-                <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/Castanho18/Castanho18.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/Castanho18/Castanho18.pdf</a>;
-            </li>
+          <li>
+            Eduardo de Mello Castanho. Um sistema cooperativo de precisão de posicionamento GNSS para redes veiculares. Universidade
+            Federal do Rio de Janeiro (UFRJ). Acessado em 06 de maio de 2018 por
+            <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/Castanho18/Castanho18.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/Castanho18/Castanho18.pdf</a>;
+          </li>
 
-            <li>
-                João B. Pinto Neto, Lucas C. Gomes, Eduardo M. Castanho, Miguel Elias M. Campista e Luís Henrique M. K. Costa. Um Algoritmo
-                para Cálculo de Distância Segura de Frenagem para Prevenção de Colisão Dianteira em Redes Veiculares.
-                GTA/PEE-COPPE/DEL-Poli – Universidade Federal do Rio de Janeiro (UFRJ) e Instituto Federal de Educação,
-                Ciência e Tecnologia de Rondônia - IFRO. Acessado em 06 de maio de 2018 por
-                <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/NGC16.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/NGC16.pdf</a>;
-            </li>
+          <li>
+            João B. Pinto Neto, Lucas C. Gomes, Eduardo M. Castanho, Miguel Elias M. Campista e Luís Henrique M. K. Costa. Um Algoritmo
+            para Cálculo de Distância Segura de Frenagem para Prevenção de Colisão Dianteira em Redes Veiculares. GTA/PEE-COPPE/DEL-Poli
+            – Universidade Federal do Rio de Janeiro (UFRJ) e Instituto Federal de Educação, Ciência e Tecnologia de Rondônia
+            - IFRO. Acessado em 06 de maio de 2018 por
+            <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/NGC16.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/NGC16.pdf</a>;
+          </li>
 
-            <li>
-                José Geraldo Ribeiro Júnior, Igor M. Quintanilha, Miguel Elias M. Campista, Luís Henrique M. K. Costa. Sistema para Monitoramento
-                Descentralizado de Trânsito Baseado em Redes Veiculares Infraestruturadas. GTA/PEE-COPPE/DEL-Poli – Universidade
-                Federal do Rio de Janeiro (UFRJ) e Centro Federal de Educação Tecnológica de Minas Gerais - CEFET-MG
-                Leopoldina – MG. Acessado em 06 de maio de 2018 por
-                <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/JCC13.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/JCC13.pdf</a>;
-            </li>
+          <li>
+            José Geraldo Ribeiro Júnior, Igor M. Quintanilha, Miguel Elias M. Campista, Luís Henrique M. K. Costa. Sistema para Monitoramento
+            Descentralizado de Trânsito Baseado em Redes Veiculares Infraestruturadas. GTA/PEE-COPPE/DEL-Poli – Universidade
+            Federal do Rio de Janeiro (UFRJ) e Centro Federal de Educação Tecnológica de Minas Gerais - CEFET-MG Leopoldina
+            – MG. Acessado em 06 de maio de 2018 por
+            <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/JCC13.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/JCC13.pdf</a>;
+          </li>
         </ol>
       </div>
     </section>
 
-  </div>
+    </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
 
 </body>
 
