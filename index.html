@@ -46,10 +46,10 @@
           <a class="nav-link js-scroll-trigger" href="#introduction">Introdução</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#description">Descrição e aplicações</a>
+          <a class="nav-link js-scroll-trigger" href="#tecnology">Explicação da tecnologia</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#tecnology">Explicação da tecnologia</a>
+          <a class="nav-link js-scroll-trigger" href="#applications">Aplicações</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#communication">Protocolos e padrões de Redes Veiculares</a>
@@ -85,47 +85,13 @@
         <div class="subheading mb-5">Ary Neto, Igor Rocha, Paulo Mattos
         </div>
         <p class="tabed">
-          Redes veiculares (VANETs) são uma classe especial de Redes móveis Ad Hoc (MANETs) formadas por veículos que possuem equipamentos
-          com tecnologia wireless. A comunicação nas VANETs é feita entre dois automóveis e/ou entre veículos e unidades
-          lateral à pista (placas, sinais...) formando um sistema de transporte inteligente.
+          Redes Veiculares Ad-Hoc (Vehicular Ad-Hoc Networks - VANETs) são uma classe especial de Redes Móveis Ad-Hoc (Mobile Ad-Hoc Networks - MANETs) formadas por veículos e equipamentos de rodovias que possuem
+          tecnologia wireless. A comunicação nas VANETs é feita entre dois automóveis e/ou entre veículos e unidades
+          laterais à pista (placas, sinais, paradais, etc), formando um sistema de transporte inteligente, capaz de trocar informações acerca do tráfego e das condições da pista praticamente em tempo real.
         </p>
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="description">
-      <div class="my-auto">
-        <h2 class="mb-5">Descrição e aplicações</h2>
-        <p class="tabed">
-          Dentre as aplicações se destacam as de entretenimento onde a principal intenção é trazer conteúdos da internet como músicas,
-          filmes e vídeos; conveniência com o objetivo de trazer informação de melhores postos de combustíveis, melhores
-          rotas, cobrança automática de pedágios e outras facilidades ao motorista; e segurança onde a divulgação de informações
-          sobre acidentes e outras ocorrências são alvos dessa classe. Abaixo alguns exemplos de pesquisas e aplicações interessantes.
-        </p>
-        <p class="tabed">
-          A Distribuição de Conteúdo em Redes Veiculares ainda é um problema
-        </p>
-        <p class="tabed">
-          Achar a melhor rota é baseado na descoberta do caminho mínimo dependendo do estado das arestas e os seus pesos. O caminho
-          é ótimo se e somente se a soma dos seus custos de transição for mínima partindo da origem até o destino, realizando
-          todas as possíveis combinações. Uma saída para planejar a melhor uma rota é utilizando uma versão modificada do
-          algoritmo de busca Anytime Repairing A* (ARA*) proposto por Likhachev.
-        </p>
-        <p class="tabed">
-          Falhas humanas nas ultrapassagens geram riscos enormes de acidentes diariamente nas estradas um algoritmo que faça suporte
-          a ultrapassagens pode reduzir o número de falhas além de economizar combustível. Para esse cenário é fundamental
-          obter a informação da trajetória do veículo.
-        </p>
-        <p class="tabed">
-          Um contraste intrigante pode ser observado no cálculo de uma distância segura de frenagem para prevenção de colisão dianteira
-          onde é utilizado comunicações dedicadas de curto alcance (unidades de bordo) e um sistema autônomo de frenagem
-          segura de trens. No primeiro caso as pesquisas são voltadas a algoritmos e testes para aproveitamento e análise
-          da localização fornecida por um GPS, presente na unidade de bordo. E no segundo cenário onde os trens não aproveitam
-          das informações limitadas disponibilizadas por um GPS e outra estratégia precisa ser usada.
-        </p>
-
-      </div>
-
-    </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="tecnology">
       <div class="my-auto">
@@ -166,6 +132,50 @@
         </p>
 
       </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="applications">
+      <div class="my-auto">
+        <h2 class="mb-5">Aplicações</h2>
+        <p class="tabed">
+          Dentre as aplicações se destacam: 
+          <ul>
+            <li>entretenimento, onde a principal intenção é prover conteúdo como músicas,
+          filmes e vídeos;
+            </li>
+            <li>conveniência, com o objetivo de trazer informação de melhores postos de combustíveis, melhores
+          rotas, cobrança automática de pedágios e outras facilidades ao motorista;
+            </li>
+            <li>e segurança, promovendo a divulgação de informações
+          sobre acidentes e outras ocorrências que necessitem do alerta dos motoristas.
+            </li>
+          </ul>
+          Abaixo alguns exemplos de pesquisas e aplicações interessantes.
+        </p>
+        <p class="tabed">
+          A Distribuição de Conteúdo em Redes Veiculares ainda é um problema
+        </p>
+        <p class="tabed">
+          Achar a melhor rota é baseado na descoberta do caminho mínimo dependendo do estado das arestas e os seus pesos. O caminho
+          é ótimo se e somente se a soma dos seus custos de transição for mínima partindo da origem até o destino, realizando
+          todas as possíveis combinações. Uma saída para planejar a melhor uma rota é utilizando uma versão modificada do
+          algoritmo de busca Anytime Repairing A* (ARA*) proposto por Likhachev.
+        </p>
+        <p class="tabed">
+          Falhas humanas nas ultrapassagens geram riscos enormes de acidentes diariamente nas estradas um algoritmo que faça suporte
+          a ultrapassagens pode reduzir o número de falhas além de economizar combustível. Para esse cenário é fundamental
+          obter a informação da trajetória do veículo.
+        </p>
+        <p class="tabed">
+          Um contraste intrigante pode ser observado no cálculo de uma distância segura de frenagem para prevenção de colisão dianteira
+          onde é utilizado comunicações dedicadas de curto alcance (unidades de bordo) e um sistema autônomo de frenagem
+          segura de trens. No primeiro caso as pesquisas são voltadas a algoritmos e testes para aproveitamento e análise
+          da localização fornecida por um GPS, presente na unidade de bordo. E no segundo cenário onde os trens não aproveitam
+          das informações limitadas disponibilizadas por um GPS e outra estratégia precisa ser usada.
+        </p>
+
+      </div>
+
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="communication">
