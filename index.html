@@ -188,6 +188,7 @@
         <h3>
           <b>Arquitetura WAVE</b>
         </h3>
+
         <p class="tabed">
           A arquitetura WAVE (Wireless Access to Vehicular Environment) foi desenvolvida pelo IEEE dentro do grupo de trabalho IEEE
           802.11. Seu objetivo é padronizar as comunicações veiculares no grupo IEEE 802.11. O padrão é conhecido como IEEE
@@ -343,9 +344,10 @@
           e certificação.
         </p>
         <p class="tabed">
-          O padrão P1609.2 define também um subconjunto das OBUs, chamados Public Safety OBUs – PSOBUs (Unidade de Bordo de Segurança
-          Publica). As PSOBUs equipa veiculos ligados à segurança pública como viaturas policiais, e são responsáveis por
-          operar aplicações especificas relacionadas à segurança pública, como controle de sinais de trânsito.
+          O padrão P1609.2 define também um subconjunto das OBUs, chamados
+          <i>Public Safety OBUs – PSOBUs</i> (Unidade de Bordo de Segurança Publica). As PSOBUs equipa veiculos ligados à segurança
+          pública como viaturas policiais, e são responsáveis por operar aplicações especificas relacionadas à segurança
+          pública, como controle de sinais de trânsito.
         </p>
         <br/>
 
@@ -353,8 +355,29 @@
           IEEE P1609.3 – Serviços de Rede
         </h4>
         <p class="tabed">
+          Esse padrão especifica os serviços das camadas de controle de enlace lógico (
+          <i>Logical Link Control - LLC</i>), de rede e de transporte. A comunicação WAVE pode utilizar IPv6 ou WSMs. O padrão
+          IEEE1609.3 também define a MIB para a pilha WAVE.
+        </p>
+
+        <img src="img/wave.png" style="height: 50%; width: auto" />
+        <center>Imagem retirada de [14]</center>
+        <br/>
+
+        <p class="tabed">
+          Como ilustrado na imagem acima, a pilha WAVE possui um plano de Gerenciamento e um plano de dados:
         </p>
         <p class="tabed">
+          O plano de dados define os protocolos de comunicação responsáveis pelo envio de dados gerados pelas aplicações assim como
+          tráfego gerado entre as entidades do plano de gerenciamento em máquinas diferentes, ou entre entidades de gerenciamento
+          e aplicações. Ele consiste em quatro serviços: o LLC, protocolo de redes IPv6, os protocolos de transporte UDP
+          e TCP, e o protocolo WSMP.
+        </p>
+        <p class="tabed">
+          O plano de gerenciamento é encarregado pela configuração e manutenção do sistema. Os serviços do plano de dados são utilizados
+          para a transmissão de informação entre os dispositivos. O plano de gerenciamento implementa os seguintes serviços:
+          registro de aplicações, gerenciamento de WBSS, monitoramento da utilização de canais, configuração do IPv6, monitoramento
+          do indicador de potência de recepção do canal e manutenção da base de dados do gerenciamento.
         </p>
         <br/>
 
@@ -362,8 +385,12 @@
           IEEE P1609.4 – Operação de Múltiplos Canais
         </h4>
         <p class="tabed">
+          A arquitetura WAVE define a utilização de um canal de controle (Control Channel - CCH) e multiplos canais de serviço (Service
+          Chanel - SCH). Ao ser inicializado, um dispositivo WAVE deve monitorar o CCH à espera de anuncios de serviço WAVE
+          (WAVE Service Add - WSA) que contem o número do SCH a ser utilizado para um determinado serviço.
         </p>
         <p class="tabed">
+          
         </p>
         <br/>
 
@@ -503,17 +530,17 @@
       </div>
     </section>
 
-    </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
 
 </body>
 
