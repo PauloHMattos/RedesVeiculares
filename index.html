@@ -390,17 +390,43 @@
           (WAVE Service Add - WSA) que contem o número do SCH a ser utilizado para um determinado serviço.
         </p>
         <p class="tabed">
-          
+          Dispositivos WAVE com apena suma interfáce de rádio não são capazes de monitorar o CCH enquanto utilizam uma SCH. Nesses
+          casos é preciso uma sincronização entre os dispositivos para que o intervalo CCH seja comum a todos. Depois de
+          serem sincronizados esses dispositivos podem monitorar periodicamente o CCH em intervalos especificos, um intervalo
+          CCH seguido por um intervalo SCH. A duração dos intervalos é definida pelo padrão IEEE 1609.4
         </p>
+        <p class="tabed">
+          A imagem abaixo representa a subcamada MAC com multiplos canais WAVE.
+        </p>
+        <img src="img/wave-mac.png" style="height: 50%; width: auto" />
+        <center>Imagem retirada de [14]</center>
         <br/>
 
         <h4>
           IEEE 802.11p
         </h4>
         <p class="tabed">
+          Os padrões IEEE P1609.4 e IEEE 802.11p definem algumas mudanças na subcamada MAC desvrita no padrão IEEE 802.11. O padrão
+          IEEE 802.11p é uma extensão da familia de protocolos IEEE 802.11. Ele se baseia principalmente no IEEE 802.11a,
+          porém opera na faixa DSRC (5,9GHz).O padrão 802.11p faz tres modificações principais na camada física do IEEE 802.11a.
+          Foram evitadas muitas e grandes alterações para que não fosse necessária uma nova tecnologia de radiotransmissão
+          para se utilizar o IEEE 802.11p.
         </p>
-        <p class="tabed">
-        </p>
+        
+        <ul>
+          <li>
+            A primeira modificação é o estreitamento da largura dos canais de 20MHz para 10MHz. A utilização de canais mais estreiros
+            compensa o maior espalhamento do atraso RMS esperado em ambientes veiculares.
+          </li>
+          <li>
+            A segunda modificação estabelece requisitos mais restritos de desempenho do receptor de rádio, se comparado a IEEE802.11a,
+            em especial com relação a rejeição de canais adjacentes. Dessa forma espera-se reduzir a interferência entre
+            canais, problema significativo em cenários onde há grande densidade de veiculos.</li>
+          <li>
+            A terceira modificação, específica à utilização dos rádios IEEE 802.11p nos EUA, no espectro DSRC, define quatro máscaras
+            de transmissão dedicadas a quatro classes de operação distintas.
+          </li>
+        </ul>
         <br/>
       </div>
     </section>
