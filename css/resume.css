@@ -169,3 +169,18 @@ img
 {
     padding-bottom: 10px;
 }
+
+table {
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dee2e6;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  color: #dee2e6;
+  background-color: #BD5D38;
+}

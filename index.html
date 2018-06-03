@@ -52,10 +52,10 @@
           <a class="nav-link js-scroll-trigger" href="#tecnology">Explicação da tecnologia</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#simulators">Simuladores de VANETs</a>
+          <a class="nav-link js-scroll-trigger" href="#communication">Protocolos e padrões de Redes Veiculares</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#protocols">Protocolos e padrões da indústria</a>
+          <a class="nav-link js-scroll-trigger" href="#simulators">Simuladores de VANETs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#inteligents">VANETs inteligentes</a>
@@ -171,6 +171,216 @@
       </div>
     </section>
 
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="communication">
+      <div class="my-auto">
+        <h2>Protocolos e padrões de Redes Veiculares</h2>
+        <p class="tabed">
+          Os Estados Unidos da América foram a vanguarda nos esforços para padronizar as redes veículares. Em 1999, a FCC (
+          <i>Federal Communications Commission</i>) reservou 75MHz do espectro de frequências na faixa de 5,9GHz para as aplicações
+          chamadas DSRC (
+          <i>Dedicated Short Range Communications</i>). A faixa DSRC é licensiada, porém livre; essa faixa é restrita a aplicação
+          e as tecnologias utilizadas nela, mas não existe cobrança pelo seu uso. Ao redor do mundo também existem outros
+          esforços com o objetivo de reservar partes do espectro da radiofrequencia para comunicações veiculares.
+        </p>
+        <p class="tabed">
+          A imagem abaixo representa a alocações de canais DSRC:
+          <img src="img/dsrc.png" />
+          <center>Imagem retirada de [14]</center>
+        </p>
+
+        <h3>
+          <b>Arquitetura WAVE</b>
+        </h3>
+        <p class="tabed">
+          A arquitetura WAVE (Wireless Access to Vehicular Environment) foi desenvolvida pelo IEEE dentro do grupo de trabalho IEEE
+          802.11. Seu objetivo é padronizar as comunicações veiculares no grupo IEEE 802.11. O padrão é conhecido como IEEE
+          802.11p WAVE e é definido em seis documentos:
+        </p>
+
+        <ol>
+          <li>
+            IEEE 802.11: define uma série de padrões de transmissão e codificação para comunicações sem fio;
+          </li>
+          <li>
+            IEEE 802.11p: define as camadas físicas e de controle de acesso ao meio (MAC) para redes veiculares;
+          </li>
+          <li>
+            IEEE P1609.1: especifica serviços e interfaces da aplicação de Gerenciamento de Recursos da arquitetura WAVE;
+          </li>
+          <li>
+            IEEE P1609.2: define formatos e metodos para garantir a segurança da comunicação WAVE;
+          </li>
+          <li>
+            IEEE P1609.3: define os serviçoes das camadas de rede e de transporte para a pilha WAVE;
+          </li>
+          <li>
+            IEEE P1609.4: define modificações no padrão IEEE 802.11 para a operação em multiplos canais.
+          </li>
+        </ol>
+
+        <p class="tabed">
+          Os documentos IEEE 1609 definem um conjunto de padrões para a comunicação em ambientes WAVE. Seu principal objetivo é prover
+          um conjunto de interfaces padrão para os fabricantes de automóveis. Isso é importante pois torna possivel que exista
+          interoperabilidade entre todos os dispositivos fabricados. O padrão deve considerar também que os veículos se deslocam
+          a altas velocidades e portante as cominicações devem ser concluidas em pequenos intervalos de tempo, atendendo
+          assim os requisitos dos Sistemas Inteligentes de Transporte. A tabela abaixo descreve as nomenclaturas usadas nos
+          documentos da família IEEE 1609:
+        </p>
+
+        <table border="1" style="text-align: center; border: 1px black">
+          <tr>
+            <th>
+              Dispositivo WAVE
+            </th>
+            <th>
+              Dispositivo que implementa a subcamada MAC e a camada física de acordo com o padrao WAVE
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Unidade de Bordo
+              <br/> (On Board Unit – OBU)
+            </td>
+            <td>
+              Dispositivo WAVE movel capaz de trocar informação com outras OBUs ou RSUs
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Unidades de Acostamento
+              <br/> (Road Side Unit – RSU)
+            </td>
+            <td>
+              Dispositivo WAVE estacionário capaz de trocar informação com outras OBUs
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Gerente de Recursos
+              <br/> (Resources Manager - RM)
+            </td>
+            <td>
+              Aplicação WAVE tipicamente executava nas RSUs
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Processador de Comandos de Recursos
+              <br/> (Resource Command Processor - RCP)
+            </td>
+            <td>
+              Aplicação WAVE executadas em uma OBU
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Aplicações do Gerente de Recursos
+              <br/> (Resource Manager Applications – RMAs)
+            </td>
+            <td>
+              Aplicações executadas em dispositivos remotamente conectados a RSUs
+            </td>
+          </tr>
+          <tr>
+            <td>
+              WBSS
+              <br/> (WAVE Basic Service Set)
+            </td>
+            <td>
+              Conjunto de estações WAVE consistindo de um provedor de WBSS e zero ou mais usuarios de WBSS
+            </td>
+          </tr>
+          <tr>
+            <td>
+              WSM
+              <br/> (WAVE Short Message)
+            </td>
+            <td>
+              Mensagem curta WAVE, enviada pelo protocolo WSMP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Provedor de WBSS
+            </td>
+            <td>
+              Dispositivo iniciador de um WBSS ou emissor de WSMs
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Usuário de WBSS
+            </td>
+            <td>
+              Dispositivo associado a um WBSS ou destinatario de WSMs
+            </td>
+          </tr>
+        </table>
+        <center>Tabela extraida de [14]</center>
+        <br/>
+
+        <h4>
+          IEEE P1609.1 – Gerente de Recursos
+        </h4>
+        <p class="tabed">
+          Na arquitetura WAVE as RSUs são, em sua maioria, dispositivos estáticos que hospedam aplicações e oferecem serviços, enquanto
+          as OBUs executam aplicações que utilizam determinados serviços. Este padrão especifica serviços e interfaces do
+          RM que tipicamente é uma aplicação executada em uma RSU. O RM se comunica com a aplicação RCP, executada em uma
+          OBU. O RM se comunica também se comunica com RMAa, que são aplicações executadas em dispositivos remotamente conectados
+          a RSUs.
+        </p>
+        <p class="tabed">
+          O principal objetivo deste padrão é favorecer a interoperabilidade de aplicações WAVE, de forma a simplificar a OBU e assim
+          reduzir seu custo e/ou aumentar seu desempenho. Isso ocorre pois a OBU não é obrigada a interpretar mensagens de
+          aplicação. O processamento pode ser movido para a RSU ou para um dispositivo conectado a RSU.
+        </p>
+        <br/>
+
+        <h4>
+          IEEE P1609.2 – Segurança
+        </h4>
+        <p class="tabed">
+          O padrão IEEE P1609.2 define formatos seguros de processamento de mensagens. Ele também define as circunstâncias nas quais
+          devem ser usadas mensagens seguras e como essas mensagens devem ser processadas, de acordo com o seu proposito.
+          O padrão define a utilização de ferramentas de segurança tradicionais, como Infraestrutura de Chaves Publicas (PKI)
+          e certificação.
+        </p>
+        <p class="tabed">
+          O padrão P1609.2 define também um subconjunto das OBUs, chamados Public Safety OBUs – PSOBUs (Unidade de Bordo de Segurança
+          Publica). As PSOBUs equipa veiculos ligados à segurança pública como viaturas policiais, e são responsáveis por
+          operar aplicações especificas relacionadas à segurança pública, como controle de sinais de trânsito.
+        </p>
+        <br/>
+
+        <h4>
+          IEEE P1609.3 – Serviços de Rede
+        </h4>
+        <p class="tabed">
+        </p>
+        <p class="tabed">
+        </p>
+        <br/>
+
+        <h4>
+          IEEE P1609.4 – Operação de Múltiplos Canais
+        </h4>
+        <p class="tabed">
+        </p>
+        <p class="tabed">
+        </p>
+        <br/>
+
+        <h4>
+          IEEE 802.11p
+        </h4>
+        <p class="tabed">
+        </p>
+        <p class="tabed">
+        </p>
+        <br/>
+      </div>
+    </section>
+
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="simulators">
       <div class="my-auto">
         <h2 class="mb-5">Simuladores de VANETs</h2>
@@ -181,13 +391,6 @@
           simulação de tráfego rodoviário) é combinado com um simulador de rede como o NetSim (TETCOS), para estudar o desempenho
           das VANETs.
         </p>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="protocols">
-      <div class="my-auto">
-        <h2 class="mb-5">Protocolos e padrões da indústria</h2>
-
-      </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="inteligents">
@@ -302,6 +505,15 @@
             – MG. Acessado em 06 de maio de 2018 por
             <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/JCC13.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/JCC13.pdf</a>;
           </li>
+
+          <li>
+            Rafael dos S. Alvez. Igor do V. Campbell, Rodrigo de S.Couto, Miguel Elias M. Campista, Igor M. Moraes, Marcelo G. Rubinstein,
+            Luís Henrique M. K. Costa, Otto Carlos M.B. Duarte e Michel Abdalla. Sistema para Monitoramento Redes Veiculares:
+            Princípios, Aplicações e Desafios. GTA/PEE-COPPE/DEL-Poli – Universidade Federal do Rio de Janeiro (UFRJ). Acessado
+            em 26 de maio de 2018 por
+            <a href="https://www.gta.ufrj.br/ftp/gta/TechReports/ACC09.pdf">https://www.gta.ufrj.br/ftp/gta/TechReports/ACC09.pdf</a>;
+          </li>
+
         </ol>
       </div>
     </section>
