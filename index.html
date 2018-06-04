@@ -55,12 +55,6 @@
           <a class="nav-link js-scroll-trigger" href="#communication">Protocolos e padrões de Redes Veiculares</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#inteligents">VANETs inteligentes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#brazil">Situação da tecnologia no Brasil</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#conclusion">Conclusão</a>
         </li>
         <li class="nav-item">
@@ -104,19 +98,17 @@
         </p>
         <p class="tabed">
           Grande parte das WLANs são redes com infra-estrutura. A transferência de dados acontece sempre entre uma estação e um ponto
-          de acesso (Access Point). Esse ponto de acesso são nós especiais que permitem captar e retransmitir as mensagens
-          enviadas pelas estações. Nunca uma estação se comunica diretamente com outra estação. Ele também pode funcionar
-          como uma ponte para outra rede. Um problema é quando a infra-estrutura da rede é destruida como por exemplo por
-          um terremoto deixando a rede inutilizada. Redes de telefonia móvel são um caso típico de redes com infra-estrutura.
+          de acesso (Access Point). Esses pontos de acesso são nós especiais que permitem captar e retransmitir as mensagens
+          enviadas pelas estações. Nunca uma estação se comunica diretamente com outra estação. O ponto de acesso também pode funcionar
+          como uma ponte para outra rede. Um problema é quando a infra-estrutura da rede é destruida, como por exemplo por
+          um terremoto, deixando a rede inutilizada. Redes de telefonia móvel são um caso típico de redes com infra-estrutura.
         </p>
         <p class="tabed">
-          As redes Ad Hoc não necessitam de nenhuma infra-estrutura para funcionar. É possível cada estação se comunicar sem intermediário
-          com outra. Nenhum ponto de acesso é necessário para controlar o acesso ao meio. Criando então uma barreira geográfica
-          onde uma estação X só pode se comunicar com uma estação Y se Y estiver dentro do raio de ação (onde o sinal desta
-          estação chegue com um mínimo de clareza) de X ou se existir uma ou mais estações entre X e Y que possam encaminhar
-          a mensagem. Numa rede Ad Hoc, a complexidade de cada estação é alta porque toda estação tem que implementar mecanismos
-          de acesso ao meio, mecanismos para controlar problemas com “estações escondidas” e mecanismos para prover uma certa
-          qualidade de serviço.
+          As redes Ad Hoc não necessitam de nenhuma infra-estrutura para funcionar, sendo possível cada estação se comunicar com outra sem ajuda de um intermediário. Como nenhum ponto de acesso é necessário para controlar o acesso ao meio, existe uma barreira geográfica: uma estação X só pode se comunicar com uma estação Y se Y estiver dentro do raio de ação de X (onde o sinal desta
+          estação chegue com um mínimo de clareza), ou se existir uma ou mais estações entre X e Y que possam encaminhar
+          a mensagem. Numa rede Ad Hoc, a complexidade das estações é alta porque cada estação tem que implementar mecanismos
+          de acesso ao meio, mecanismos para controlar problemas com “estações escondidas” e mecanismos para prover a
+          qualidade de serviço desejada.
         </p>
 
         <img src="img/img1.jpg" />
@@ -125,11 +117,14 @@
           Muitas VANETs usam o IEEE 802.11 que é uma típica rede com infra-estrutura, mas que pode suportar uma rede Ad Hoc.
         </p>
         <p class="tabed">
-          A tecnologia mais recente para essa rede sem fio é a comunicação por luz visível [VLC] (transmissão e recepção por infravermelho).
-          Imagine uma luz de flash é ligada e desligada extremamente rapidamente através de um computador, podemos considerar
-          que existe comunicação. A rápida adoção de lâmpadas LED criou uma enorme oportunidade para o VLC junto com o problema
-          do congestionamento do espectro de rádio utilizado pelos sistemas de rádio Wi-Fi e celular.
+          A tecnologia mais recente para essa rede sem fio é a comunicação por luz visível (VLC).
+          Usando uma fonte de luz ligada e desligada extremamente rapidamente através de um computador, podemos enviar mensagens para um receptor capaz de interpretar esse sinal. A rápida adoção de lâmpadas LED criou uma enorme oportunidade para o VLC junto com o problema
+          do congestionamento do espectro de rádio utilizado pelos sistemas de rádio Wi-Fi e celular. Abaixo, temos um exemplo experimental do uso de VLC em comunicação veicular.
         </p>
+        
+        <div class="text-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/knoE4q5MO4w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
       </div>
     </section>
@@ -138,40 +133,20 @@
       <div class="my-auto">
         <h2 class="mb-5">Aplicações</h2>
         <p class="tabed">
-          Dentre as aplicações se destacam: 
+          As aplicações de VANETs são comumentes divididas em três categorias:
           <ul>
-            <li>entretenimento, onde a principal intenção é prover conteúdo como músicas,
-          filmes e vídeos;
+            <li><b>segurança</b> - tem o objetivo de reduzir as chances de acidentes ao fornecer informações sobre perigos encontrados à frente na estrada. Com essas informações, os motoristas expandem seu grau de percepção do trânsito e podem assim tomar melhores decisões, antecipando riscos que normalmente os supreenderiam sem dar tempo de reação, como carros parados à frente, motoristas furando sinais vermelhos, carros em alta velocidade forçando ultrapassagem, entre outros;
             </li>
-            <li>conveniência, com o objetivo de trazer informação de melhores postos de combustíveis, melhores
-          rotas, cobrança automática de pedágios e outras facilidades ao motorista;
+            <li><b>eficiência de tráfego</b> - as aplicações desse tipo procuram reduzir o tempo de viagem e evitar a criação de congestionamentos. Dois exemplos claros desse tipo são o compartilhamento de informações atualizadas de velocidade média em cada via (como feito no Waze, porém com dados vindos diretamente dos carros que estão nestas vias), e aplicações de sincronização de semáforos, que podem fazer com que os sinais de trânsito se ajustem ao fluxo de veículos em tempo real;
             </li>
-            <li>e segurança, promovendo a divulgação de informações
-          sobre acidentes e outras ocorrências que necessitem do alerta dos motoristas.
+            <li><b>entretenimento e conveniência</b> - apesar de o objetivo primário das VANETs ser as duas primeiras categorias apresentadas, a possibilidade de comunicação veículo-a-veículo e entre veículos e pontos de acesso nas vias traz a oportunidade de exploração comercial por diversos atores. Um exemplo disso é a possibilidade de criação de um serviço para informar motoristas acerca de vagas de estacionamento disponíveis numa garagem lotada, reduzindo o tempo gasto vagando pelo estacionamento. Outro exemplo é o envio de conteúdo de marketing relacionado aos arredores do veículo, como restaurantes e hotéis.
             </li>
           </ul>
-          Abaixo alguns exemplos de pesquisas e aplicações interessantes.
-        </p>
-        <p class="tabed">
-          A Distribuição de Conteúdo em Redes Veiculares ainda é um problema
-        </p>
-        <p class="tabed">
-          Achar a melhor rota é baseado na descoberta do caminho mínimo dependendo do estado das arestas e os seus pesos. O caminho
-          é ótimo se e somente se a soma dos seus custos de transição for mínima partindo da origem até o destino, realizando
-          todas as possíveis combinações. Uma saída para planejar a melhor uma rota é utilizando uma versão modificada do
-          algoritmo de busca Anytime Repairing A* (ARA*) proposto por Likhachev.
-        </p>
-        <p class="tabed">
-          Falhas humanas nas ultrapassagens geram riscos enormes de acidentes diariamente nas estradas um algoritmo que faça suporte
-          a ultrapassagens pode reduzir o número de falhas além de economizar combustível. Para esse cenário é fundamental
-          obter a informação da trajetória do veículo.
-        </p>
-        <p class="tabed">
-          Um contraste intrigante pode ser observado no cálculo de uma distância segura de frenagem para prevenção de colisão dianteira
-          onde é utilizado comunicações dedicadas de curto alcance (unidades de bordo) e um sistema autônomo de frenagem
-          segura de trens. No primeiro caso as pesquisas são voltadas a algoritmos e testes para aproveitamento e análise
-          da localização fornecida por um GPS, presente na unidade de bordo. E no segundo cenário onde os trens não aproveitam
-          das informações limitadas disponibilizadas por um GPS e outra estratégia precisa ser usada.
+          No vídeo abaixo podemos ver um exemplo real de uso de VANETs para o estabelecimento de uma direção mais segura.
+          <div class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EIlafkLydYY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+
         </p>
 
       </div>
@@ -185,9 +160,9 @@
           Os Estados Unidos da América foram a vanguarda nos esforços para padronizar as redes veículares. Em 1999, a FCC (
           <i>Federal Communications Commission</i>) reservou 75MHz do espectro de frequências na faixa de 5,9GHz para as aplicações
           chamadas DSRC (
-          <i>Dedicated Short Range Communications</i>). A faixa DSRC é licensiada, porém livre; essa faixa é restrita a aplicação
-          e as tecnologias utilizadas nela, mas não existe cobrança pelo seu uso. Ao redor do mundo também existem outros
-          esforços com o objetivo de reservar partes do espectro da radiofrequencia para comunicações veiculares.
+          <i>Dedicated Short Range Communications</i>). A faixa DSRC é licenciada, porém livre; essa faixa é restrita à aplicação
+          e às tecnologias utilizadas nela, mas não existe cobrança pelo seu uso. Ao redor do mundo também existem outros
+          esforços com o objetivo de reservar partes do espectro da radiofrequência para comunicações veiculares.
         </p>
         <p class="tabed">
           A imagem abaixo representa a alocações de canais DSRC:
@@ -441,22 +416,6 @@
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="inteligents">
-      <div class="my-auto">
-        <h2 class="mb-5">VANETs inteligentes</h2>
-        <p class="tabed">
-          As redes veiculares inteligentes (InVANETs) utilizam os protocolos de rede sem fio IEE 802.11p e IEE 802.16 para a comunicação.
-        </p>
-      </div>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="brazil">
-      <div class="my-auto">
-        <h2 class="mb-5">Situação da tecnologia no Brasil</h2>
-
-      </div>
-    </section>
-
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="conclusion">
       <div class="my-auto">
         <h2 class="mb-5">Conclusão</h2>
@@ -495,6 +454,12 @@
             Title: "The Security of Vehicular Adhoc Networks"
             <br/> Authors: Farzad Sabahi
             <br/> Published by the IEEE.
+            <br/>
+          </li>
+          <li>
+            Title: "Vehicular Technologies - Deployment and Applications" Chapter: "Smart Vehicles, Technologies and main Applications in Vehicular Ad hoc Networks"
+            <br/> Authors: Anna Maria Vegni, Mauro Biagi, Roberto Cusani.
+            <br/> Published by InTech in February 2013.
             <br/>
           </li>
 
